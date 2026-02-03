@@ -70,6 +70,53 @@ section h3 {
   color: #0066cc;
 }
 
+/* Participants badges */
+.participants-section {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participants {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.participant {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  font-size: 0.85rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.participant:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+.more {
+  font-size: 0.85rem;
+  color: #666;
+  padding-left: 6px;
+}
+
+.no-participants {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
 .activity-card p {
   margin-bottom: 8px;
 }
